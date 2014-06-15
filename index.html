@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<script type="text/javascript" src="js/validation.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css" /> 
+</head>
+
+<body>
+
+	<div id="form">
+	
+			<form action="" method="post" class="basic-grey" id="myForm">
+			
+			<h1>Contact Form
+			
+        		<span>Assignment</span>
+        		
+    		</h1>
+    		
+			<label>
+			
+				<div class="lable-span">First Name:</div>
+				<input name="firstname" type="text" /> <span id="firstname_error" style="color:red"></span> 
+				
+			</label>
+			
+			<label>
+			
+				<div class="lable-span">Last Name: </div>
+				<input name="lastname" type="text" size="30"/> <span id="lastname_error" style="color:red"></span> 
+				
+			</label>
+			
+			<label>
+			
+				<div class="lable-span">Year of Birth:</div>        
+				<input name="year" type="text" size="10"/> <span id="year_error" style="color:red"></span> 
+				
+			</label>
+			
+			
+			<!-- Gender: Male <input name="male" type="radio" /> Female <input name="female" type="radio" /> <span id="male_error" style="color:red"></span> -->
+			
+			<lable>
+			
+				<div class="lable-span">Email:</div>
+				<input name="email" type="text" size="30"/> <span id="email_error" style="color:red"></span>
+				
+			</lable>
+			
+			<label>
+			
+				<div class="lable-span"> Mobile:</div>
+				<input name="mobile" type="text" size="30"/> <span id="mobile_error" style="color:red"></span>
+				
+			</label>
+			
+			<label>
+			<div class="lable-span">Expected Salary:</div> 
+			<select name="salary">
+		
+			<option value="0">--- Select One ---</option>
+			<option value="1">20-30</option>
+			<option value="2">30-40</option>
+			<option value="3">40-50</option>
+			<option value="4">50+</option>
+		
+			</select> <span id="salary_error" style="color:red"></span>
+			</label>
+			
+			<label>
+			<div class="lable-span">Personal Intrests:</div> 
+			<select name="interest">
+		
+			<option value="0">--- Select One ---</option>
+			<option value="1">Business</option>
+			<option value="2">Beaches</option>
+			<option value="3">History</option>
+			<option value="4">Music</option>
+		
+			</select><span id="interest_error" style="color:red"></span> 
+			</label>
+			
+			<label>
+			<div class="lable-span">Please tell us why you want this position:</div>
+			<textarea name="message"></textarea> <span id="message_error" style="color:red"></span> <br></br><br></br>
+			</label>
+			
+			<lable>
+			<div class="lable-span">&nbsp;</div>
+			<input type="submit" value="Submit" onClick="checkFormRed(); return false;"/> 
+			<input type="reset" value="Reset"/> 
+			</lable>
+			
+		</form>
+		
+</div> <!-- end of wrap div -->
+
+</body>
+
+</html>
+
